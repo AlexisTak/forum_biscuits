@@ -25,17 +25,17 @@ class Hg
     private static $version = false;
 
     /**
-     * @var \Composer\IO\IOInterface
+     * @var IOInterface
      */
     private $io;
 
     /**
-     * @var \Composer\Config
+     * @var Config
      */
     private $config;
 
     /**
-     * @var \Composer\Util\ProcessExecutor
+     * @var ProcessExecutor
      */
     private $process;
 
@@ -111,7 +111,7 @@ class Hg
     {
         if (false === self::$version) {
             self::$version = null;
-            if (0 === $process->execute('hg --version', $output) && Preg::isMatch('/^.+? (\d+(?:\.\d+)+)(?:\+.*?)?\)?\r?\n/', $output, $matches)) {
+            if (0 === $process->execute(['hg', '--version'], $output) && Preg::isMatch('/^.+? (\d+(?:\.\d+)+)(?:\+.*?)?\)?\r?\n/', $output, $matches)) {
                 self::$version = $matches[1];
             }
         }

@@ -55,6 +55,19 @@ class Platform
     }
 
     /**
+     * Infallible realpath version that falls back on the given $path if realpath is not working
+     */
+    public static function realpath(string $path): string
+    {
+        $realPath = realpath($path);
+        if ($realPath === false) {
+            return $path;
+        }
+
+        return $realPath;
+    }
+
+    /**
      * getenv() equivalent but reads from the runtime global variables first
      *
      * @param non-empty-string $name
@@ -106,6 +119,7 @@ class Platform
                 if ((bool) Platform::getEnv('HOME')) {
                     return Platform::getEnv('HOME') . $matches['path'];
                 }
+
                 return Platform::getEnv('USERPROFILE') . $matches['path'];
             }
 
@@ -154,7 +168,7 @@ class Platform
             if (
                 !(bool) ini_get('open_basedir')
                 && is_readable('/proc/version')
-                && false !== stripos((string)Silencer::call('file_get_contents', '/proc/version'), 'microsoft')
+                && false !== stripos((string) Silencer::call('file_get_contents', '/proc/version'), 'microsoft')
                 && !self::isDocker() // Docker and Podman running inside WSL should not be seen as WSL
             ) {
                 return self::$isWindowsSubsystemForLinux = true;
@@ -204,7 +218,11 @@ class Platform
             } catch (\Throwable $e) {
                 break;
             }
-            if (is_string($data) && str_contains($data, '/var/lib/docker/')) {
+            if (!is_string($data)) {
+                continue;
+            }
+            // detect default mount points created by Docker/containerd
+            if (str_contains($data, '/var/lib/docker/') || str_contains($data, '/io.containerd.snapshotter')) {
                 return self::$isDocker = true;
             }
         }
@@ -262,6 +280,7 @@ class Platform
         if ($stat === false) {
             return false;
         }
+
         // Check if formatted mode is S_IFCHR
         return 0020000 === ($stat['mode'] & 0170000);
     }
@@ -308,7 +327,7 @@ class Platform
             if (defined('PHP_OS_FAMILY') && PHP_OS_FAMILY === 'Linux') {
                 $process = new ProcessExecutor();
                 try {
-                    if (0 === $process->execute('lsmod | grep vboxguest', $ignoredOutput)) {
+                    if (0 === $process->execute(['lsmod'], $output) && str_contains($output, 'vboxguest')) {
                         return self::$isVirtualBoxGuest = true;
                     }
                 } catch (\Exception $e) {

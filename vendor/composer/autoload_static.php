@@ -4,7 +4,7 @@
 
 namespace Composer\Autoload;
 
-class ComposerStaticInit3a0ab28a39dc7b077c15af2415c3542c
+class ComposerStaticInitc02c113e4ef11cb237095a09717f5c01
 {
     public static $files = array (
         'a4a119a56e50fbb293281d9a48007e0e' => __DIR__ . '/..' . '/symfony/polyfill-php80/bootstrap.php',
@@ -31,30 +31,18 @@ class ComposerStaticInit3a0ab28a39dc7b077c15af2415c3542c
         'da94ac5d3ca7d2dbab84ce561ce72bfd' => __DIR__ . '/..' . '/laminas/laminas-diactoros/src/functions/marshal_headers_from_sapi.php',
         '3d97c8dcdfba8cb85d3b34f116bb248b' => __DIR__ . '/..' . '/laminas/laminas-diactoros/src/functions/marshal_method_from_sapi.php',
         'e6f3bc6883e449ab367280b34158c05b' => __DIR__ . '/..' . '/laminas/laminas-diactoros/src/functions/marshal_protocol_version_from_sapi.php',
-        'd59fbae42019aedf227094ac49a46f50' => __DIR__ . '/..' . '/laminas/laminas-diactoros/src/functions/marshal_uri_from_sapi.php',
         'de95e0ac670b27c84ef8c5ac41fc1b34' => __DIR__ . '/..' . '/laminas/laminas-diactoros/src/functions/normalize_server.php',
         'b6c2870932b0250c10334a86dcb33c7f' => __DIR__ . '/..' . '/laminas/laminas-diactoros/src/functions/normalize_uploaded_files.php',
         'd02cf21124526632320d6f20b1bbf905' => __DIR__ . '/..' . '/laminas/laminas-diactoros/src/functions/parse_cookie_header.php',
-        'd919fc9d5ad52cfb7f322f7fe36458ab' => __DIR__ . '/..' . '/laminas/laminas-diactoros/src/functions/create_uploaded_file.legacy.php',
-        'e397f74f8af3b1e56166a6e99f216ee7' => __DIR__ . '/..' . '/laminas/laminas-diactoros/src/functions/marshal_headers_from_sapi.legacy.php',
-        'd154b49fab8e4da34fb553a2d644918c' => __DIR__ . '/..' . '/laminas/laminas-diactoros/src/functions/marshal_method_from_sapi.legacy.php',
-        '9d3db23ca418094bcf0b641a0c9559ed' => __DIR__ . '/..' . '/laminas/laminas-diactoros/src/functions/marshal_protocol_version_from_sapi.legacy.php',
-        'b0b88a3b89caae681462c58ff19a7059' => __DIR__ . '/..' . '/laminas/laminas-diactoros/src/functions/marshal_uri_from_sapi.legacy.php',
-        'cc8e14526dc240491e17a838cb78508c' => __DIR__ . '/..' . '/laminas/laminas-diactoros/src/functions/normalize_server.legacy.php',
-        '786bf90caabc9e09b6ad4cc5ca8f0e30' => __DIR__ . '/..' . '/laminas/laminas-diactoros/src/functions/normalize_uploaded_files.legacy.php',
-        '751a5a3f463e4be759be31748b61737c' => __DIR__ . '/..' . '/laminas/laminas-diactoros/src/functions/parse_cookie_header.legacy.php',
         '3f8ee9969da604d0f15c841b77b11450' => __DIR__ . '/..' . '/laminas/laminas-stratigility/src/functions/double-pass-middleware.php',
         'ee5523a5d51d6d51030227439db1ef74' => __DIR__ . '/..' . '/laminas/laminas-stratigility/src/functions/host.php',
         '5f6e29ca023a0bdefa2476adb465d527' => __DIR__ . '/..' . '/laminas/laminas-stratigility/src/functions/middleware.php',
         '9cafd472178656835c3361ed18897082' => __DIR__ . '/..' . '/laminas/laminas-stratigility/src/functions/path.php',
-        '9bc1a9c6b25234212b0ecc0b82bc7fcd' => __DIR__ . '/..' . '/laminas/laminas-stratigility/src/functions/double-pass-middleware.legacy.php',
-        '9ad95be8d1f1c62e52cb995973bf5246' => __DIR__ . '/..' . '/laminas/laminas-stratigility/src/functions/host.legacy.php',
-        '44f5a19d6d262baf7ab55c8a8bb56f5a' => __DIR__ . '/..' . '/laminas/laminas-stratigility/src/functions/middleware.legacy.php',
-        'dd89a2771fc24829c6aade9a7786bd8f' => __DIR__ . '/..' . '/laminas/laminas-stratigility/src/functions/path.legacy.php',
         '253c157292f75eb38082b5acb06f3f01' => __DIR__ . '/..' . '/nikic/fast-route/src/functions.php',
-        '04b6576f786ea6b5b4b577af08f8e4d1' => __DIR__ . '/..' . '/symfony/polyfill-intl-messageformatter/bootstrap.php',
-        '84245cb95409c51c4ae97f8e59da883a' => __DIR__ . '/..' . '/flarum/core/src/helpers.php',
         'ad155f8f1cf0d418fe49e248db8c661b' => __DIR__ . '/..' . '/react/promise/src/functions_include.php',
+        '04b6576f786ea6b5b4b577af08f8e4d1' => __DIR__ . '/..' . '/symfony/polyfill-intl-messageformatter/bootstrap.php',
+        '9d2b9fc6db0f153a0a149fefb182415e' => __DIR__ . '/..' . '/symfony/polyfill-php84/bootstrap.php',
+        '84245cb95409c51c4ae97f8e59da883a' => __DIR__ . '/..' . '/flarum/core/src/helpers.php',
     );
 
     public static $prefixLengthsPsr4 = array (
@@ -79,7 +67,6 @@ class ComposerStaticInit3a0ab28a39dc7b077c15af2415c3542c
         'W' =>
         array (
             'Whoops\\' => 7,
-            'Webmozart\\Assert\\' => 17,
         ),
         'T' =>
         array (
@@ -88,6 +75,7 @@ class ComposerStaticInit3a0ab28a39dc7b077c15af2415c3542c
         ),
         'S' =>
         array (
+            'Symfony\\Polyfill\\Php84\\' => 23,
             'Symfony\\Polyfill\\Php81\\' => 23,
             'Symfony\\Polyfill\\Php80\\' => 23,
             'Symfony\\Polyfill\\Php73\\' => 23,
@@ -139,6 +127,10 @@ class ComposerStaticInit3a0ab28a39dc7b077c15af2415c3542c
         array (
             'Opis\\Closure\\' => 13,
         ),
+        'N' =>
+        array (
+            'Nette\\' => 6,
+        ),
         'M' =>
         array (
             'Monolog\\' => 8,
@@ -146,6 +138,7 @@ class ComposerStaticInit3a0ab28a39dc7b077c15af2415c3542c
             'Middlewares\\' => 12,
             'MatthiasMullie\\PathConverter\\' => 29,
             'MatthiasMullie\\Minify\\' => 22,
+            'MabeEnum\\' => 9,
         ),
         'L' =>
         array (
@@ -196,20 +189,7 @@ class ComposerStaticInit3a0ab28a39dc7b077c15af2415c3542c
         'F' =>
         array (
             'Franzl\\Middleware\\Whoops\\' => 25,
-            'Flarum\\Tags\\' => 12,
-            'Flarum\\Suspend\\' => 15,
-            'Flarum\\Subscriptions\\' => 21,
-            'Flarum\\Sticky\\' => 14,
-            'Flarum\\Statistics\\' => 18,
-            'Flarum\\Pusher\\' => 14,
-            'Flarum\\Nicknames\\' => 17,
-            'Flarum\\Mentions\\' => 16,
-            'Flarum\\Lock\\' => 12,
-            'Flarum\\Likes\\' => 13,
-            'Flarum\\Flags\\' => 13,
             'Flarum\\ExtensionManager\\' => 24,
-            'Flarum\\BBCode\\' => 14,
-            'Flarum\\Approval\\' => 16,
             'Flarum\\' => 7,
             'Fig\\Http\\Message\\' => 17,
             'FastRoute\\' => 10,
@@ -290,10 +270,6 @@ class ComposerStaticInit3a0ab28a39dc7b077c15af2415c3542c
         array (
             0 => __DIR__ . '/..' . '/filp/whoops/src/Whoops',
         ),
-        'Webmozart\\Assert\\' =>
-        array (
-            0 => __DIR__ . '/..' . '/webmozart/assert/src',
-        ),
         'Tobscure\\JsonApi\\' =>
         array (
             0 => __DIR__ . '/..' . '/sycho/json-api/src',
@@ -301,6 +277,10 @@ class ComposerStaticInit3a0ab28a39dc7b077c15af2415c3542c
         'TijsVerkoyen\\CssToInlineStyles\\' =>
         array (
             0 => __DIR__ . '/..' . '/tijsverkoyen/css-to-inline-styles/src',
+        ),
+        'Symfony\\Polyfill\\Php84\\' =>
+        array (
+            0 => __DIR__ . '/..' . '/symfony/polyfill-php84',
         ),
         'Symfony\\Polyfill\\Php81\\' =>
         array (
@@ -468,6 +448,11 @@ class ComposerStaticInit3a0ab28a39dc7b077c15af2415c3542c
         array (
             0 => __DIR__ . '/..' . '/opis/closure/src',
         ),
+        'Nette\\' =>
+        array (
+            0 => __DIR__ . '/..' . '/nette/schema/src',
+            1 => __DIR__ . '/..' . '/nette/utils/src',
+        ),
         'Monolog\\' =>
         array (
             0 => __DIR__ . '/..' . '/monolog/monolog/src/Monolog',
@@ -489,6 +474,10 @@ class ComposerStaticInit3a0ab28a39dc7b077c15af2415c3542c
         'MatthiasMullie\\Minify\\' =>
         array (
             0 => __DIR__ . '/..' . '/matthiasmullie/minify/src',
+        ),
+        'MabeEnum\\' =>
+        array (
+            0 => __DIR__ . '/..' . '/marc-mabe/php-enum/src',
         ),
         'League\\MimeTypeDetection\\' =>
         array (
@@ -632,61 +621,9 @@ class ComposerStaticInit3a0ab28a39dc7b077c15af2415c3542c
         array (
             0 => __DIR__ . '/..' . '/franzl/whoops-middleware/src',
         ),
-        'Flarum\\Tags\\' =>
-        array (
-            0 => __DIR__ . '/..' . '/flarum/tags/src',
-        ),
-        'Flarum\\Suspend\\' =>
-        array (
-            0 => __DIR__ . '/..' . '/flarum/suspend/src',
-        ),
-        'Flarum\\Subscriptions\\' =>
-        array (
-            0 => __DIR__ . '/..' . '/flarum/subscriptions/src',
-        ),
-        'Flarum\\Sticky\\' =>
-        array (
-            0 => __DIR__ . '/..' . '/flarum/sticky/src',
-        ),
-        'Flarum\\Statistics\\' =>
-        array (
-            0 => __DIR__ . '/..' . '/flarum/statistics/src',
-        ),
-        'Flarum\\Pusher\\' =>
-        array (
-            0 => __DIR__ . '/..' . '/flarum/pusher/src',
-        ),
-        'Flarum\\Nicknames\\' =>
-        array (
-            0 => __DIR__ . '/..' . '/flarum/nicknames/src',
-        ),
-        'Flarum\\Mentions\\' =>
-        array (
-            0 => __DIR__ . '/..' . '/flarum/mentions/src',
-        ),
-        'Flarum\\Lock\\' =>
-        array (
-            0 => __DIR__ . '/..' . '/flarum/lock/src',
-        ),
-        'Flarum\\Likes\\' =>
-        array (
-            0 => __DIR__ . '/..' . '/flarum/likes/src',
-        ),
-        'Flarum\\Flags\\' =>
-        array (
-            0 => __DIR__ . '/..' . '/flarum/flags/src',
-        ),
         'Flarum\\ExtensionManager\\' =>
         array (
             0 => __DIR__ . '/..' . '/flarum/extension-manager/src',
-        ),
-        'Flarum\\BBCode\\' =>
-        array (
-            0 => __DIR__ . '/..' . '/flarum/bbcode/src',
-        ),
-        'Flarum\\Approval\\' =>
-        array (
-            0 => __DIR__ . '/..' . '/flarum/approval/src',
         ),
         'Flarum\\' =>
         array (
@@ -706,11 +643,11 @@ class ComposerStaticInit3a0ab28a39dc7b077c15af2415c3542c
         ),
         'Doctrine\\Inflector\\' =>
         array (
-            0 => __DIR__ . '/..' . '/doctrine/inflector/lib/Doctrine/Inflector',
+            0 => __DIR__ . '/..' . '/doctrine/inflector/src',
         ),
         'Doctrine\\Deprecations\\' =>
         array (
-            0 => __DIR__ . '/..' . '/doctrine/deprecations/lib/Doctrine/Deprecations',
+            0 => __DIR__ . '/..' . '/doctrine/deprecations/src',
         ),
         'Doctrine\\DBAL\\' =>
         array (
@@ -807,6 +744,7 @@ class ComposerStaticInit3a0ab28a39dc7b077c15af2415c3542c
         'Attribute' => __DIR__ . '/..' . '/symfony/polyfill-php80/Resources/stubs/Attribute.php',
         'CURLStringFile' => __DIR__ . '/..' . '/symfony/polyfill-php81/Resources/stubs/CURLStringFile.php',
         'Composer\\InstalledVersions' => __DIR__ . '/..' . '/composer/InstalledVersions.php',
+        'Deprecated' => __DIR__ . '/..' . '/symfony/polyfill-php84/Resources/stubs/Deprecated.php',
         'IntlException' => __DIR__ . '/..' . '/symfony/polyfill-intl-messageformatter/Resources/stubs/IntlException.php',
         'JsonException' => __DIR__ . '/..' . '/symfony/polyfill-php73/Resources/stubs/JsonException.php',
         'MessageFormatter' => __DIR__ . '/..' . '/symfony/polyfill-intl-messageformatter/Resources/stubs/MessageFormatter.php',
@@ -839,6 +777,7 @@ class ComposerStaticInit3a0ab28a39dc7b077c15af2415c3542c
         'Nette\\Schema\\Processor' => __DIR__ . '/..' . '/nette/schema/src/Schema/Processor.php',
         'Nette\\Schema\\Schema' => __DIR__ . '/..' . '/nette/schema/src/Schema/Schema.php',
         'Nette\\Schema\\ValidationException' => __DIR__ . '/..' . '/nette/schema/src/Schema/ValidationException.php',
+        'Nette\\ShouldNotHappenException' => __DIR__ . '/..' . '/nette/utils/src/exceptions.php',
         'Nette\\SmartObject' => __DIR__ . '/..' . '/nette/utils/src/SmartObject.php',
         'Nette\\StaticClass' => __DIR__ . '/..' . '/nette/utils/src/StaticClass.php',
         'Nette\\UnexpectedValueException' => __DIR__ . '/..' . '/nette/utils/src/exceptions.php',
@@ -874,11 +813,9 @@ class ComposerStaticInit3a0ab28a39dc7b077c15af2415c3542c
         'Nette\\Utils\\Validators' => __DIR__ . '/..' . '/nette/utils/src/Utils/Validators.php',
         'Normalizer' => __DIR__ . '/..' . '/symfony/polyfill-intl-normalizer/Resources/stubs/Normalizer.php',
         'PhpToken' => __DIR__ . '/..' . '/symfony/polyfill-php80/Resources/stubs/PhpToken.php',
-        'Pusher' => __DIR__ . '/..' . '/pusher/pusher-php-server/lib/Pusher.php',
-        'PusherException' => __DIR__ . '/..' . '/pusher/pusher-php-server/lib/Pusher.php',
-        'PusherInstance' => __DIR__ . '/..' . '/pusher/pusher-php-server/lib/Pusher.php',
+        'ReflectionConstant' => __DIR__ . '/..' . '/symfony/polyfill-php84/Resources/stubs/ReflectionConstant.php',
         'ReturnTypeWillChange' => __DIR__ . '/..' . '/symfony/polyfill-php81/Resources/stubs/ReturnTypeWillChange.php',
-        'Stringable' => __DIR__ . '/..' . '/symfony/polyfill-php80/Resources/stubs/Stringable.php',
+        'Stringable' => __DIR__ . '/..' . '/marc-mabe/php-enum/stubs/Stringable.php',
         'UnhandledMatchError' => __DIR__ . '/..' . '/symfony/polyfill-php80/Resources/stubs/UnhandledMatchError.php',
         'ValueError' => __DIR__ . '/..' . '/symfony/polyfill-php80/Resources/stubs/ValueError.php',
         'lessc' => __DIR__ . '/..' . '/wikimedia/less.php/lessc.inc.php',
@@ -887,10 +824,10 @@ class ComposerStaticInit3a0ab28a39dc7b077c15af2415c3542c
     public static function getInitializer(ClassLoader $loader)
     {
         return \Closure::bind(function () use ($loader) {
-            $loader->prefixLengthsPsr4 = ComposerStaticInit3a0ab28a39dc7b077c15af2415c3542c::$prefixLengthsPsr4;
-            $loader->prefixDirsPsr4 = ComposerStaticInit3a0ab28a39dc7b077c15af2415c3542c::$prefixDirsPsr4;
-            $loader->prefixesPsr0 = ComposerStaticInit3a0ab28a39dc7b077c15af2415c3542c::$prefixesPsr0;
-            $loader->classMap = ComposerStaticInit3a0ab28a39dc7b077c15af2415c3542c::$classMap;
+            $loader->prefixLengthsPsr4 = ComposerStaticInitc02c113e4ef11cb237095a09717f5c01::$prefixLengthsPsr4;
+            $loader->prefixDirsPsr4 = ComposerStaticInitc02c113e4ef11cb237095a09717f5c01::$prefixDirsPsr4;
+            $loader->prefixesPsr0 = ComposerStaticInitc02c113e4ef11cb237095a09717f5c01::$prefixesPsr0;
+            $loader->classMap = ComposerStaticInitc02c113e4ef11cb237095a09717f5c01::$classMap;
 
         }, null, ClassLoader::class);
     }

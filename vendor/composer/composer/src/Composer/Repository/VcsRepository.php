@@ -66,7 +66,7 @@ class VcsRepository extends ArrayRepository implements ConfigurableRepositoryInt
     private $driver;
     /** @var ?VersionCacheInterface */
     private $versionCache;
-    /** @var string[] */
+    /** @var list<string> */
     private $emptyReferences = [];
     /** @var array<'tags'|'branches', array<string, TransportException>> */
     private $versionTransportExceptions = [];
@@ -83,6 +83,7 @@ class VcsRepository extends ArrayRepository implements ConfigurableRepositoryInt
             'gitlab' => 'Composer\Repository\Vcs\GitLabDriver',
             'bitbucket' => 'Composer\Repository\Vcs\GitBitbucketDriver',
             'git-bitbucket' => 'Composer\Repository\Vcs\GitBitbucketDriver',
+            'forgejo' => 'Composer\Repository\Vcs\ForgejoDriver',
             'git' => 'Composer\Repository\Vcs\GitDriver',
             'hg' => 'Composer\Repository\Vcs\HgDriver',
             'perforce' => 'Composer\Repository\Vcs\PerforceDriver',
@@ -165,7 +166,7 @@ class VcsRepository extends ArrayRepository implements ConfigurableRepositoryInt
     }
 
     /**
-     * @return string[]
+     * @return list<string>
      */
     public function getEmptyReferences(): array
     {
@@ -441,6 +442,11 @@ class VcsRepository extends ArrayRepository implements ConfigurableRepositoryInt
         }
         if (!isset($data['source'])) {
             $data['source'] = $driver->getSource($identifier);
+        }
+
+        // if custom dist info is provided but does not provide a reference, copy the source reference to it
+        if (is_array($data['dist']) && !isset($data['dist']['reference']) && isset($data['source']['reference'])) {
+            $data['dist']['reference'] = $data['source']['reference'];
         }
 
         return $data;
