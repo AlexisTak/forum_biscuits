@@ -1824,6 +1824,168 @@
             "install-path": "../filp/whoops"
         },
         {
+            "name": "flarum/approval",
+            "version": "v1.8.2",
+            "version_normalized": "1.8.2.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/flarum/approval.git",
+                "reference": "61a76252b455d5dcad5535e9fef4a5445643d59a"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/flarum/approval/zipball/61a76252b455d5dcad5535e9fef4a5445643d59a",
+                "reference": "61a76252b455d5dcad5535e9fef4a5445643d59a",
+                "shasum": ""
+            },
+            "require": {
+                "flarum/core": "^1.8",
+                "flarum/flags": "^1.7"
+            },
+            "require-dev": {
+                "flarum/testing": "^1.0.0"
+            },
+            "time": "2024-10-02T11:13:26+00:00",
+            "type": "flarum-extension",
+            "extra": {
+                "flarum-cli": {
+                    "modules": {
+                        "js": true,
+                        "css": true,
+                        "admin": true,
+                        "forum": true,
+                        "gitConf": true,
+                        "styleci": true,
+                        "jsCommon": false,
+                        "prettier": true,
+                        "typescript": false,
+                        "bundlewatch": false,
+                        "editorConfig": true,
+                        "githubActions": true,
+                        "backendTesting": true
+                    }
+                },
+                "branch-alias": {
+                    "dev-main": "1.x-dev"
+                },
+                "flarum-extension": {
+                    "icon": {
+                        "name": "fas fa-check",
+                        "color": "#3F8A32",
+                        "backgroundColor": "#ABDC88"
+                    },
+                    "title": "Approval",
+                    "category": "feature"
+                }
+            },
+            "installation-source": "dist",
+            "autoload": {
+                "psr-4": {
+                    "Flarum\\Approval\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "description": "Make discussions and posts require moderator approval.",
+            "homepage": "https://flarum.org",
+            "keywords": [
+                "moderation"
+            ],
+            "support": {
+                "forum": "https://discuss.flarum.org",
+                "issues": "https://github.com/flarum/framework/issues",
+                "source": "https://github.com/flarum/approval"
+            },
+            "funding": [
+                {
+                    "url": "https://flarum.org/donate/",
+                    "type": "website"
+                }
+            ],
+            "install-path": "../flarum/approval"
+        },
+        {
+            "name": "flarum/bbcode",
+            "version": "v1.8.0",
+            "version_normalized": "1.8.0.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/flarum/bbcode.git",
+                "reference": "9d5fa06b18bf78c9d2f6e82d3904fff6e3fcb8a9"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/flarum/bbcode/zipball/9d5fa06b18bf78c9d2f6e82d3904fff6e3fcb8a9",
+                "reference": "9d5fa06b18bf78c9d2f6e82d3904fff6e3fcb8a9",
+                "shasum": ""
+            },
+            "require": {
+                "flarum/core": "^1.8"
+            },
+            "time": "2023-05-20T15:08:42+00:00",
+            "type": "flarum-extension",
+            "extra": {
+                "flarum-cli": {
+                    "modules": {
+                        "js": false,
+                        "css": false,
+                        "admin": false,
+                        "forum": false,
+                        "gitConf": true,
+                        "styleci": true,
+                        "jsCommon": false,
+                        "prettier": false,
+                        "typescript": false,
+                        "bundlewatch": false,
+                        "editorConfig": true,
+                        "githubActions": false,
+                        "backendTesting": false
+                    }
+                },
+                "branch-alias": {
+                    "dev-main": "1.x-dev"
+                },
+                "flarum-extension": {
+                    "icon": {
+                        "name": "fas fa-bold",
+                        "color": "#fff",
+                        "backgroundColor": "#238C59"
+                    },
+                    "title": "BBCode",
+                    "category": "feature"
+                }
+            },
+            "installation-source": "dist",
+            "autoload": {
+                "psr-4": {
+                    "Flarum\\BBCode\\": "src"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "description": "Allow posts to be formatted with BBCode.",
+            "homepage": "https://flarum.org",
+            "keywords": [
+                "formatting"
+            ],
+            "support": {
+                "forum": "https://discuss.flarum.org",
+                "issues": "https://github.com/flarum/framework/issues",
+                "source": "https://github.com/flarum/bbcode"
+            },
+            "funding": [
+                {
+                    "url": "https://flarum.org/donate/",
+                    "type": "website"
+                }
+            ],
+            "install-path": "../flarum/bbcode"
+        },
+        {
             "name": "flarum/core",
             "version": "v1.8.11",
             "version_normalized": "1.8.11.0",
@@ -1973,6 +2135,79 @@
             "install-path": "../flarum/core"
         },
         {
+            "name": "flarum/emoji",
+            "version": "v1.8.1",
+            "version_normalized": "1.8.1.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/flarum/emoji.git",
+                "reference": "edd6527e1014fd30779627f1c91461d12a9a1173"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/flarum/emoji/zipball/edd6527e1014fd30779627f1c91461d12a9a1173",
+                "reference": "edd6527e1014fd30779627f1c91461d12a9a1173",
+                "shasum": ""
+            },
+            "require": {
+                "flarum/core": "^1.8"
+            },
+            "time": "2024-10-02T07:10:53+00:00",
+            "type": "flarum-extension",
+            "extra": {
+                "flarum-cli": {
+                    "modules": {
+                        "js": true,
+                        "css": true,
+                        "admin": false,
+                        "forum": true,
+                        "gitConf": true,
+                        "styleci": true,
+                        "jsCommon": false,
+                        "prettier": true,
+                        "typescript": false,
+                        "bundlewatch": false,
+                        "editorConfig": true,
+                        "githubActions": true,
+                        "backendTesting": false
+                    }
+                },
+                "branch-alias": {
+                    "dev-main": "1.x-dev"
+                },
+                "flarum-extension": {
+                    "icon": {
+                        "image": "icon.svg",
+                        "backgroundColor": "#FECC4D"
+                    },
+                    "title": "Emoji",
+                    "category": "feature"
+                }
+            },
+            "installation-source": "dist",
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "description": "Convert text and unicode emoji into Twemoji.",
+            "homepage": "https://flarum.org",
+            "keywords": [
+                "formatting"
+            ],
+            "support": {
+                "forum": "https://discuss.flarum.org",
+                "issues": "https://github.com/flarum/framework/issues",
+                "source": "https://github.com/flarum/emoji"
+            },
+            "funding": [
+                {
+                    "url": "https://flarum.org/donate/",
+                    "type": "website"
+                }
+            ],
+            "install-path": "../flarum/emoji"
+        },
+        {
             "name": "flarum/extension-manager",
             "version": "v1.0.7",
             "version_normalized": "1.0.7.0",
@@ -2075,6 +2310,1088 @@
                 }
             ],
             "install-path": "../flarum/extension-manager"
+        },
+        {
+            "name": "flarum/flags",
+            "version": "v1.8.2",
+            "version_normalized": "1.8.2.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/flarum/flags.git",
+                "reference": "ba857db6f0e8c8b55cbab1ca0b7bc30215e92447"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/flarum/flags/zipball/ba857db6f0e8c8b55cbab1ca0b7bc30215e92447",
+                "reference": "ba857db6f0e8c8b55cbab1ca0b7bc30215e92447",
+                "shasum": ""
+            },
+            "require": {
+                "flarum/core": "^1.8.6"
+            },
+            "require-dev": {
+                "flarum/core": "*@dev",
+                "flarum/tags": "*@dev",
+                "flarum/testing": "^1.0.0"
+            },
+            "time": "2024-10-26T22:18:59+00:00",
+            "type": "flarum-extension",
+            "extra": {
+                "flarum-cli": {
+                    "modules": {
+                        "js": true,
+                        "css": true,
+                        "admin": true,
+                        "forum": true,
+                        "gitConf": true,
+                        "styleci": true,
+                        "jsCommon": false,
+                        "prettier": true,
+                        "typescript": true,
+                        "bundlewatch": false,
+                        "editorConfig": true,
+                        "githubActions": true,
+                        "backendTesting": true
+                    }
+                },
+                "branch-alias": {
+                    "dev-main": "1.x-dev"
+                },
+                "flarum-extension": {
+                    "icon": {
+                        "name": "fas fa-flag",
+                        "color": "#fff",
+                        "backgroundColor": "#D659B5"
+                    },
+                    "title": "Flags",
+                    "category": "feature"
+                }
+            },
+            "installation-source": "dist",
+            "autoload": {
+                "psr-4": {
+                    "Flarum\\Flags\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "description": "Allow users to flag posts for moderator review.",
+            "homepage": "https://flarum.org",
+            "keywords": [
+                "moderation"
+            ],
+            "support": {
+                "forum": "https://discuss.flarum.org",
+                "issues": "https://github.com/flarum/framework/issues",
+                "source": "https://github.com/flarum/flags"
+            },
+            "funding": [
+                {
+                    "url": "https://flarum.org/donate/",
+                    "type": "website"
+                }
+            ],
+            "install-path": "../flarum/flags"
+        },
+        {
+            "name": "flarum/lang-english",
+            "version": "v1.8.0",
+            "version_normalized": "1.8.0.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/flarum/lang-english.git",
+                "reference": "7b1c2feb49f0b6707746907ca426dd309860b60f"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/flarum/lang-english/zipball/7b1c2feb49f0b6707746907ca426dd309860b60f",
+                "reference": "7b1c2feb49f0b6707746907ca426dd309860b60f",
+                "shasum": ""
+            },
+            "require": {
+                "flarum/core": "^1.8"
+            },
+            "time": "2023-05-20T15:08:42+00:00",
+            "type": "flarum-extension",
+            "extra": {
+                "flarum-cli": {
+                    "modules": {
+                        "js": false,
+                        "css": false,
+                        "admin": false,
+                        "forum": false,
+                        "gitConf": true,
+                        "styleci": true,
+                        "jsCommon": false,
+                        "prettier": false,
+                        "typescript": false,
+                        "bundlewatch": false,
+                        "editorConfig": true,
+                        "githubActions": false,
+                        "backendTesting": false
+                    }
+                },
+                "branch-alias": {
+                    "dev-main": "1.x-dev"
+                },
+                "flarum-locale": {
+                    "code": "en",
+                    "title": "English"
+                },
+                "flarum-extension": {
+                    "icon": {
+                        "image": "icon.svg",
+                        "backgroundSize": "cover",
+                        "backgroundColor": "#00247d",
+                        "backgroundPosition": "center"
+                    },
+                    "info": {
+                        "donate": "https://flarum.org/donate/",
+                        "support": "https://discuss.flarum.org",
+                        "website": "https://flarum.org"
+                    },
+                    "title": "English",
+                    "category": "language"
+                }
+            },
+            "installation-source": "dist",
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "description": "English language pack.",
+            "keywords": [
+                "locale"
+            ],
+            "support": {
+                "source": "https://github.com/flarum/lang-english/tree/v1.8.0"
+            },
+            "funding": [
+                {
+                    "url": "https://github.com/flarum",
+                    "type": "github"
+                },
+                {
+                    "url": "https://opencollective.com/flarum",
+                    "type": "open_collective"
+                }
+            ],
+            "install-path": "../flarum/lang-english"
+        },
+        {
+            "name": "flarum/likes",
+            "version": "v1.8.1",
+            "version_normalized": "1.8.1.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/flarum/likes.git",
+                "reference": "106cfa65076ba4be2da7af99f86eac99e5a38f4d"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/flarum/likes/zipball/106cfa65076ba4be2da7af99f86eac99e5a38f4d",
+                "reference": "106cfa65076ba4be2da7af99f86eac99e5a38f4d",
+                "shasum": ""
+            },
+            "require": {
+                "flarum/core": "^1.8"
+            },
+            "require-dev": {
+                "flarum/testing": "^1.0.0"
+            },
+            "time": "2024-10-02T11:13:26+00:00",
+            "type": "flarum-extension",
+            "extra": {
+                "flarum-cli": {
+                    "modules": {
+                        "js": true,
+                        "css": true,
+                        "admin": true,
+                        "forum": true,
+                        "gitConf": true,
+                        "styleci": true,
+                        "jsCommon": false,
+                        "prettier": true,
+                        "typescript": false,
+                        "bundlewatch": false,
+                        "editorConfig": true,
+                        "githubActions": true,
+                        "backendTesting": true
+                    }
+                },
+                "branch-alias": {
+                    "dev-main": "1.x-dev"
+                },
+                "flarum-extension": {
+                    "icon": {
+                        "name": "far fa-thumbs-up",
+                        "color": "#fff",
+                        "backgroundColor": "#3A649D"
+                    },
+                    "title": "Likes",
+                    "category": "feature"
+                }
+            },
+            "installation-source": "dist",
+            "autoload": {
+                "psr-4": {
+                    "Flarum\\Likes\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "description": "Allow users to like posts.",
+            "homepage": "https://flarum.org",
+            "keywords": [
+                "discussion"
+            ],
+            "support": {
+                "forum": "https://discuss.flarum.org",
+                "issues": "https://github.com/flarum/framework/issues",
+                "source": "https://github.com/flarum/likes"
+            },
+            "funding": [
+                {
+                    "url": "https://flarum.org/donate/",
+                    "type": "website"
+                }
+            ],
+            "install-path": "../flarum/likes"
+        },
+        {
+            "name": "flarum/lock",
+            "version": "v1.8.2",
+            "version_normalized": "1.8.2.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/flarum/lock.git",
+                "reference": "f526df48dfa7b87aee0ca0b245000a3f3960cece"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/flarum/lock/zipball/f526df48dfa7b87aee0ca0b245000a3f3960cece",
+                "reference": "f526df48dfa7b87aee0ca0b245000a3f3960cece",
+                "shasum": ""
+            },
+            "require": {
+                "flarum/core": "^1.8"
+            },
+            "time": "2024-10-26T22:15:50+00:00",
+            "type": "flarum-extension",
+            "extra": {
+                "flarum-cli": {
+                    "modules": {
+                        "js": true,
+                        "css": true,
+                        "admin": true,
+                        "forum": true,
+                        "gitConf": true,
+                        "styleci": true,
+                        "jsCommon": false,
+                        "prettier": true,
+                        "typescript": false,
+                        "bundlewatch": false,
+                        "editorConfig": true,
+                        "githubActions": true,
+                        "backendTesting": false
+                    }
+                },
+                "branch-alias": {
+                    "dev-main": "1.x-dev"
+                },
+                "flarum-extension": {
+                    "icon": {
+                        "name": "fas fa-lock",
+                        "color": "#666",
+                        "backgroundColor": "#ddd"
+                    },
+                    "title": "Lock",
+                    "category": "feature"
+                }
+            },
+            "installation-source": "dist",
+            "autoload": {
+                "psr-4": {
+                    "Flarum\\Lock\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "description": "End a discussion and don't let anyone add further replies.",
+            "homepage": "https://flarum.org",
+            "keywords": [
+                "moderation"
+            ],
+            "support": {
+                "forum": "https://discuss.flarum.org",
+                "issues": "https://github.com/flarum/framework/issues",
+                "source": "https://github.com/flarum/lock"
+            },
+            "funding": [
+                {
+                    "url": "https://flarum.org/donate/",
+                    "type": "website"
+                }
+            ],
+            "install-path": "../flarum/lock"
+        },
+        {
+            "name": "flarum/markdown",
+            "version": "v1.8.1",
+            "version_normalized": "1.8.1.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/flarum/markdown.git",
+                "reference": "22ea41d3be90d56c8b853c6798d25d2075e5f66f"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/flarum/markdown/zipball/22ea41d3be90d56c8b853c6798d25d2075e5f66f",
+                "reference": "22ea41d3be90d56c8b853c6798d25d2075e5f66f",
+                "shasum": ""
+            },
+            "require": {
+                "flarum/core": "^1.8"
+            },
+            "time": "2024-10-02T07:10:53+00:00",
+            "type": "flarum-extension",
+            "extra": {
+                "flarum-cli": {
+                    "modules": {
+                        "js": true,
+                        "css": true,
+                        "admin": false,
+                        "forum": true,
+                        "gitConf": true,
+                        "styleci": true,
+                        "jsCommon": false,
+                        "prettier": true,
+                        "typescript": false,
+                        "bundlewatch": false,
+                        "editorConfig": true,
+                        "githubActions": true,
+                        "backendTesting": false
+                    }
+                },
+                "branch-alias": {
+                    "dev-main": "1.x-dev"
+                },
+                "flarum-extension": {
+                    "icon": {
+                        "color": "#fff",
+                        "image": "icon.svg",
+                        "backgroundSize": "100%",
+                        "backgroundColor": "#000",
+                        "backgroundRepeat": "no-repeat",
+                        "backgroundPosition": "center"
+                    },
+                    "title": "Markdown",
+                    "category": "feature"
+                }
+            },
+            "installation-source": "dist",
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "description": "Allow posts to be formatted with Markdown.",
+            "homepage": "https://flarum.org",
+            "keywords": [
+                "formatting"
+            ],
+            "support": {
+                "forum": "https://discuss.flarum.org",
+                "issues": "https://github.com/flarum/framework/issues",
+                "source": "https://github.com/flarum/markdown"
+            },
+            "funding": [
+                {
+                    "url": "https://flarum.org/donate/",
+                    "type": "website"
+                }
+            ],
+            "install-path": "../flarum/markdown"
+        },
+        {
+            "name": "flarum/mentions",
+            "version": "v1.8.5",
+            "version_normalized": "1.8.5.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/flarum/mentions.git",
+                "reference": "cda26a4fbfa39b646c6d63394b281b004ddf69b6"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/flarum/mentions/zipball/cda26a4fbfa39b646c6d63394b281b004ddf69b6",
+                "reference": "cda26a4fbfa39b646c6d63394b281b004ddf69b6",
+                "shasum": ""
+            },
+            "require": {
+                "flarum/core": "^1.8"
+            },
+            "require-dev": {
+                "flarum/core": "*@dev",
+                "flarum/tags": "*@dev",
+                "flarum/testing": "^1.0.0"
+            },
+            "time": "2024-11-06T14:59:27+00:00",
+            "type": "flarum-extension",
+            "extra": {
+                "flarum-cli": {
+                    "modules": {
+                        "js": true,
+                        "css": true,
+                        "admin": true,
+                        "forum": true,
+                        "gitConf": true,
+                        "styleci": true,
+                        "jsCommon": false,
+                        "prettier": true,
+                        "typescript": false,
+                        "bundlewatch": false,
+                        "editorConfig": true,
+                        "githubActions": true,
+                        "backendTesting": true
+                    }
+                },
+                "branch-alias": {
+                    "dev-main": "1.x-dev"
+                },
+                "flarum-extension": {
+                    "icon": {
+                        "name": "fas fa-at",
+                        "color": "#fff",
+                        "backgroundColor": "#539EC1"
+                    },
+                    "title": "Mentions",
+                    "category": "feature",
+                    "optional-dependencies": [
+                        "flarum/tags"
+                    ]
+                }
+            },
+            "installation-source": "dist",
+            "autoload": {
+                "psr-4": {
+                    "Flarum\\Mentions\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "description": "Mention and reply to specific posts and users.",
+            "homepage": "https://flarum.org",
+            "keywords": [
+                "discussion"
+            ],
+            "support": {
+                "forum": "https://discuss.flarum.org",
+                "issues": "https://github.com/flarum/framework/issues",
+                "source": "https://github.com/flarum/mentions"
+            },
+            "funding": [
+                {
+                    "url": "https://flarum.org/donate/",
+                    "type": "website"
+                }
+            ],
+            "install-path": "../flarum/mentions"
+        },
+        {
+            "name": "flarum/nicknames",
+            "version": "v1.8.2",
+            "version_normalized": "1.8.2.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/flarum/nicknames.git",
+                "reference": "ab4ab706ea778f26fb923b31a3f3a2f76c5ecbc6"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/flarum/nicknames/zipball/ab4ab706ea778f26fb923b31a3f3a2f76c5ecbc6",
+                "reference": "ab4ab706ea778f26fb923b31a3f3a2f76c5ecbc6",
+                "shasum": ""
+            },
+            "require": {
+                "flarum/core": "^1.8"
+            },
+            "require-dev": {
+                "flarum/core": "1.x-dev",
+                "flarum/testing": "^1.0.0"
+            },
+            "time": "2024-10-26T22:15:50+00:00",
+            "type": "flarum-extension",
+            "extra": {
+                "flarum-cli": {
+                    "modules": {
+                        "js": true,
+                        "css": false,
+                        "admin": true,
+                        "forum": true,
+                        "gitConf": true,
+                        "styleci": true,
+                        "jsCommon": false,
+                        "prettier": true,
+                        "typescript": false,
+                        "bundlewatch": false,
+                        "editorConfig": true,
+                        "githubActions": true,
+                        "backendTesting": true
+                    }
+                },
+                "branch-alias": {
+                    "dev-main": "1.x-dev"
+                },
+                "flarum-extension": {
+                    "icon": {
+                        "name": "fas fa-user-tag",
+                        "color": "#ffffff",
+                        "backgroundColor": "#8E4529"
+                    },
+                    "title": "Nicknames",
+                    "category": "feature"
+                }
+            },
+            "installation-source": "dist",
+            "autoload": {
+                "psr-4": {
+                    "Flarum\\Nicknames\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "description": "Allow users to set nicknames.",
+            "homepage": "https://flarum.org",
+            "keywords": [
+                "nicknames"
+            ],
+            "support": {
+                "forum": "https://discuss.flarum.org",
+                "issues": "https://github.com/flarum/framework/issues",
+                "source": "https://github.com/flarum/nicknames"
+            },
+            "funding": [
+                {
+                    "url": "https://flarum.org/donate/",
+                    "type": "website"
+                }
+            ],
+            "install-path": "../flarum/nicknames"
+        },
+        {
+            "name": "flarum/pusher",
+            "version": "v1.8.1",
+            "version_normalized": "1.8.1.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/flarum/pusher.git",
+                "reference": "dd1fb1da2d662ad2b9abb0757de7f0dc6fa7089f"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/flarum/pusher/zipball/dd1fb1da2d662ad2b9abb0757de7f0dc6fa7089f",
+                "reference": "dd1fb1da2d662ad2b9abb0757de7f0dc6fa7089f",
+                "shasum": ""
+            },
+            "require": {
+                "flarum/core": "^1.8",
+                "pusher/pusher-php-server": "^2.2"
+            },
+            "require-dev": {
+                "flarum/tags": "^1.0"
+            },
+            "time": "2024-09-29T14:35:29+00:00",
+            "type": "flarum-extension",
+            "extra": {
+                "flarum-cli": {
+                    "modules": {
+                        "js": true,
+                        "css": true,
+                        "admin": true,
+                        "forum": true,
+                        "gitConf": true,
+                        "styleci": true,
+                        "jsCommon": false,
+                        "prettier": true,
+                        "typescript": true,
+                        "bundlewatch": false,
+                        "editorConfig": true,
+                        "githubActions": true,
+                        "backendTesting": false
+                    }
+                },
+                "branch-alias": {
+                    "dev-main": "1.x-dev"
+                },
+                "flarum-extension": {
+                    "icon": {
+                        "color": "#fff",
+                        "image": "icon.png",
+                        "backgroundSize": "46% 63%",
+                        "backgroundColor": "#40bad8",
+                        "backgroundRepeat": "no-repeat",
+                        "backgroundPosition": "center"
+                    },
+                    "title": "Pusher",
+                    "category": "feature"
+                }
+            },
+            "installation-source": "dist",
+            "autoload": {
+                "psr-4": {
+                    "Flarum\\Pusher\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "description": "See new discussions and posts in real-time using Pusher.",
+            "homepage": "https://flarum.org",
+            "keywords": [
+                "discussion"
+            ],
+            "support": {
+                "forum": "https://discuss.flarum.org",
+                "issues": "https://github.com/flarum/framework/issues",
+                "source": "https://github.com/flarum/pusher"
+            },
+            "funding": [
+                {
+                    "url": "https://flarum.org/donate/",
+                    "type": "website"
+                }
+            ],
+            "install-path": "../flarum/pusher"
+        },
+        {
+            "name": "flarum/statistics",
+            "version": "v1.8.1",
+            "version_normalized": "1.8.1.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/flarum/statistics.git",
+                "reference": "e907100ad530babb12c67f4959ae14e22f77b3fc"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/flarum/statistics/zipball/e907100ad530babb12c67f4959ae14e22f77b3fc",
+                "reference": "e907100ad530babb12c67f4959ae14e22f77b3fc",
+                "shasum": ""
+            },
+            "require": {
+                "flarum/core": "^1.8"
+            },
+            "require-dev": {
+                "flarum/testing": "^1.0.0"
+            },
+            "time": "2024-10-02T07:10:53+00:00",
+            "type": "flarum-extension",
+            "extra": {
+                "flarum-cli": {
+                    "modules": {
+                        "js": true,
+                        "css": true,
+                        "admin": true,
+                        "forum": false,
+                        "gitConf": true,
+                        "styleci": true,
+                        "jsCommon": false,
+                        "prettier": true,
+                        "typescript": true,
+                        "bundlewatch": false,
+                        "editorConfig": true,
+                        "githubActions": true,
+                        "backendTesting": true
+                    },
+                    "excludeScaffolding": [
+                        "js/src/admin/index.ts"
+                    ]
+                },
+                "branch-alias": {
+                    "dev-main": "1.x-dev"
+                },
+                "flarum-extension": {
+                    "icon": {
+                        "name": "fas fa-chart-bar",
+                        "color": "#fff",
+                        "backgroundColor": "#6932d1"
+                    },
+                    "title": "Statistics",
+                    "category": "feature"
+                }
+            },
+            "installation-source": "dist",
+            "autoload": {
+                "psr-4": {
+                    "Flarum\\Statistics\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "description": "Add a basic statistics widget on the Dashboard.",
+            "homepage": "https://flarum.org",
+            "keywords": [
+                "administration"
+            ],
+            "support": {
+                "forum": "https://discuss.flarum.org",
+                "issues": "https://github.com/flarum/framework/issues",
+                "source": "https://github.com/flarum/statistics"
+            },
+            "funding": [
+                {
+                    "url": "https://flarum.org/donate/",
+                    "type": "website"
+                }
+            ],
+            "install-path": "../flarum/statistics"
+        },
+        {
+            "name": "flarum/sticky",
+            "version": "v1.8.2",
+            "version_normalized": "1.8.2.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/flarum/sticky.git",
+                "reference": "a020d8d4619ce788990cf0c94f56424184048caa"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/flarum/sticky/zipball/a020d8d4619ce788990cf0c94f56424184048caa",
+                "reference": "a020d8d4619ce788990cf0c94f56424184048caa",
+                "shasum": ""
+            },
+            "require": {
+                "flarum/core": "^1.8"
+            },
+            "require-dev": {
+                "flarum/tags": "*@dev",
+                "flarum/testing": "^1.0.0"
+            },
+            "time": "2024-10-26T22:15:50+00:00",
+            "type": "flarum-extension",
+            "extra": {
+                "flarum-cli": {
+                    "modules": {
+                        "js": true,
+                        "css": true,
+                        "admin": true,
+                        "forum": true,
+                        "gitConf": true,
+                        "styleci": true,
+                        "jsCommon": false,
+                        "prettier": true,
+                        "typescript": false,
+                        "bundlewatch": false,
+                        "editorConfig": true,
+                        "githubActions": true,
+                        "backendTesting": true
+                    }
+                },
+                "branch-alias": {
+                    "dev-main": "1.x-dev"
+                },
+                "flarum-extension": {
+                    "icon": {
+                        "name": "fas fa-thumbtack",
+                        "color": "#fff",
+                        "backgroundColor": "#D13E32"
+                    },
+                    "title": "Sticky",
+                    "category": "feature"
+                }
+            },
+            "installation-source": "dist",
+            "autoload": {
+                "psr-4": {
+                    "Flarum\\Sticky\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "description": "Pin discussions to the top of the list.",
+            "homepage": "https://flarum.org",
+            "keywords": [
+                "discussion"
+            ],
+            "support": {
+                "forum": "https://discuss.flarum.org",
+                "issues": "https://github.com/flarum/framework/issues",
+                "source": "https://github.com/flarum/sticky"
+            },
+            "funding": [
+                {
+                    "url": "https://flarum.org/donate/",
+                    "type": "website"
+                }
+            ],
+            "install-path": "../flarum/sticky"
+        },
+        {
+            "name": "flarum/subscriptions",
+            "version": "v1.8.1",
+            "version_normalized": "1.8.1.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/flarum/subscriptions.git",
+                "reference": "594100acf52ad74a33cbd30e5ca2220196790821"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/flarum/subscriptions/zipball/594100acf52ad74a33cbd30e5ca2220196790821",
+                "reference": "594100acf52ad74a33cbd30e5ca2220196790821",
+                "shasum": ""
+            },
+            "require": {
+                "flarum/core": "^1.8"
+            },
+            "require-dev": {
+                "flarum/approval": "@dev",
+                "flarum/testing": "^1.0.0"
+            },
+            "time": "2024-10-02T07:10:53+00:00",
+            "type": "flarum-extension",
+            "extra": {
+                "flarum-cli": {
+                    "modules": {
+                        "js": true,
+                        "css": true,
+                        "admin": false,
+                        "forum": true,
+                        "gitConf": true,
+                        "styleci": true,
+                        "jsCommon": false,
+                        "prettier": true,
+                        "typescript": false,
+                        "bundlewatch": false,
+                        "editorConfig": true,
+                        "githubActions": true,
+                        "backendTesting": true
+                    }
+                },
+                "branch-alias": {
+                    "dev-main": "1.x-dev"
+                },
+                "flarum-extension": {
+                    "icon": {
+                        "name": "fas fa-star",
+                        "color": "#de8e00",
+                        "backgroundColor": "#ffea7b"
+                    },
+                    "title": "Subscriptions",
+                    "category": "feature",
+                    "optional-dependencies": [
+                        "flarum/approval"
+                    ]
+                }
+            },
+            "installation-source": "dist",
+            "autoload": {
+                "psr-4": {
+                    "Flarum\\Subscriptions\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "description": "Allow users to follow discussions and receive notifications for new posts.",
+            "homepage": "https://flarum.org",
+            "keywords": [
+                "discussion"
+            ],
+            "support": {
+                "forum": "https://discuss.flarum.org",
+                "issues": "https://github.com/flarum/framework/issues",
+                "source": "https://github.com/flarum/subscriptions"
+            },
+            "funding": [
+                {
+                    "url": "https://flarum.org/donate/",
+                    "type": "website"
+                }
+            ],
+            "install-path": "../flarum/subscriptions"
+        },
+        {
+            "name": "flarum/suspend",
+            "version": "v1.8.4",
+            "version_normalized": "1.8.4.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/flarum/suspend.git",
+                "reference": "8c62430d238f650eeb54323c204b335d9c39f771"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/flarum/suspend/zipball/8c62430d238f650eeb54323c204b335d9c39f771",
+                "reference": "8c62430d238f650eeb54323c204b335d9c39f771",
+                "shasum": ""
+            },
+            "require": {
+                "flarum/core": "^1.8"
+            },
+            "require-dev": {
+                "flarum/testing": "^1.0.0"
+            },
+            "time": "2024-11-20T08:51:17+00:00",
+            "type": "flarum-extension",
+            "extra": {
+                "flarum-cli": {
+                    "modules": {
+                        "js": true,
+                        "css": true,
+                        "admin": true,
+                        "forum": true,
+                        "gitConf": true,
+                        "styleci": true,
+                        "jsCommon": false,
+                        "prettier": true,
+                        "typescript": false,
+                        "bundlewatch": false,
+                        "editorConfig": true,
+                        "githubActions": true,
+                        "backendTesting": true
+                    }
+                },
+                "branch-alias": {
+                    "dev-main": "1.x-dev"
+                },
+                "flarum-extension": {
+                    "icon": {
+                        "name": "fas fa-ban",
+                        "color": "#666",
+                        "backgroundColor": "#ddd"
+                    },
+                    "title": "Suspend",
+                    "category": "feature"
+                }
+            },
+            "installation-source": "dist",
+            "autoload": {
+                "psr-4": {
+                    "Flarum\\Suspend\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "description": "Suspend users so they can't post.",
+            "homepage": "https://flarum.org",
+            "keywords": [
+                "moderation"
+            ],
+            "support": {
+                "forum": "https://discuss.flarum.org",
+                "issues": "https://github.com/flarum/framework/issues",
+                "source": "https://github.com/flarum/suspend"
+            },
+            "funding": [
+                {
+                    "url": "https://flarum.org/donate/",
+                    "type": "website"
+                }
+            ],
+            "install-path": "../flarum/suspend"
+        },
+        {
+            "name": "flarum/tags",
+            "version": "v1.8.5",
+            "version_normalized": "1.8.5.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/flarum/tags.git",
+                "reference": "1f8bcd261da7c3d4967785a5836ab641ad1ac991"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/flarum/tags/zipball/1f8bcd261da7c3d4967785a5836ab641ad1ac991",
+                "reference": "1f8bcd261da7c3d4967785a5836ab641ad1ac991",
+                "shasum": ""
+            },
+            "require": {
+                "flarum/core": "^1.8"
+            },
+            "require-dev": {
+                "flarum/core": "*@dev",
+                "flarum/testing": "^1.0.0"
+            },
+            "time": "2025-10-03T11:14:51+00:00",
+            "type": "flarum-extension",
+            "extra": {
+                "flarum-cli": {
+                    "modules": {
+                        "js": true,
+                        "css": true,
+                        "admin": true,
+                        "forum": true,
+                        "gitConf": true,
+                        "styleci": true,
+                        "jsCommon": true,
+                        "prettier": false,
+                        "typescript": true,
+                        "bundlewatch": false,
+                        "editorConfig": true,
+                        "githubActions": true,
+                        "backendTesting": true
+                    }
+                },
+                "branch-alias": {
+                    "dev-main": "1.x-dev"
+                },
+                "flarum-extension": {
+                    "icon": {
+                        "name": "fas fa-tags",
+                        "color": "#fff",
+                        "backgroundColor": "#F28326"
+                    },
+                    "title": "Tags",
+                    "category": "feature"
+                }
+            },
+            "installation-source": "dist",
+            "autoload": {
+                "psr-4": {
+                    "Flarum\\Tags\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "description": "Organize discussions into a hierarchy of tags and categories.",
+            "homepage": "https://flarum.org",
+            "keywords": [
+                "discussion"
+            ],
+            "support": {
+                "forum": "https://discuss.flarum.org",
+                "issues": "https://github.com/flarum/framework/issues",
+                "source": "https://github.com/flarum/tags"
+            },
+            "funding": [
+                {
+                    "url": "https://flarum.org/donate/",
+                    "type": "website"
+                }
+            ],
+            "install-path": "../flarum/tags"
         },
         {
             "name": "franzl/whoops-middleware",
@@ -6194,6 +7511,57 @@
                 "source": "https://github.com/php-fig/simple-cache/tree/master"
             },
             "install-path": "../psr/simple-cache"
+        },
+        {
+            "name": "pusher/pusher-php-server",
+            "version": "2.6.4",
+            "version_normalized": "2.6.4.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/pusher/pusher-http-php.git",
+                "reference": "2cf2ba85e7ce3250468a1c42ab7c948a7d43839d"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/pusher/pusher-http-php/zipball/2cf2ba85e7ce3250468a1c42ab7c948a7d43839d",
+                "reference": "2cf2ba85e7ce3250468a1c42ab7c948a7d43839d",
+                "shasum": ""
+            },
+            "require": {
+                "ext-curl": "*",
+                "php": ">=5.2"
+            },
+            "require-dev": {
+                "phpunit/phpunit": "~4"
+            },
+            "time": "2017-06-06T16:41:17+00:00",
+            "type": "library",
+            "installation-source": "dist",
+            "autoload": {
+                "classmap": [
+                    "lib/"
+                ]
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "description": "Library for interacting with the Pusher REST API",
+            "homepage": "https://github.com/pusher/pusher-php-server",
+            "keywords": [
+                "events",
+                "php-pusher-server",
+                "publish",
+                "pusher",
+                "realtime",
+                "rest",
+                "trigger"
+            ],
+            "support": {
+                "issues": "https://github.com/pusher/pusher-http-php/issues",
+                "source": "https://github.com/pusher/pusher-http-php/tree/master"
+            },
+            "install-path": "../pusher/pusher-php-server"
         },
         {
             "name": "ralouphie/getallheaders",

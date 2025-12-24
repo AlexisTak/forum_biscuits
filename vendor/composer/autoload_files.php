@@ -38,8 +38,8 @@ return array(
     '5f6e29ca023a0bdefa2476adb465d527' => $vendorDir . '/laminas/laminas-stratigility/src/functions/middleware.php',
     '9cafd472178656835c3361ed18897082' => $vendorDir . '/laminas/laminas-stratigility/src/functions/path.php',
     '253c157292f75eb38082b5acb06f3f01' => $vendorDir . '/nikic/fast-route/src/functions.php',
-    'ad155f8f1cf0d418fe49e248db8c661b' => $vendorDir . '/react/promise/src/functions_include.php',
     '04b6576f786ea6b5b4b577af08f8e4d1' => $vendorDir . '/symfony/polyfill-intl-messageformatter/bootstrap.php',
-    '9d2b9fc6db0f153a0a149fefb182415e' => $vendorDir . '/symfony/polyfill-php84/bootstrap.php',
     '84245cb95409c51c4ae97f8e59da883a' => $vendorDir . '/flarum/core/src/helpers.php',
+    'ad155f8f1cf0d418fe49e248db8c661b' => $vendorDir . '/react/promise/src/functions_include.php',
+    '9d2b9fc6db0f153a0a149fefb182415e' => $vendorDir . '/symfony/polyfill-php84/bootstrap.php',
 );

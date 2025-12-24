@@ -4,7 +4,7 @@
 
 namespace Composer\Autoload;
 
-class ComposerStaticInitc02c113e4ef11cb237095a09717f5c01
+class ComposerStaticInit26e117448b7e4aff234b5ed0dbd68e1d
 {
     public static $files = array (
         'a4a119a56e50fbb293281d9a48007e0e' => __DIR__ . '/..' . '/symfony/polyfill-php80/bootstrap.php',
@@ -39,10 +39,10 @@ class ComposerStaticInitc02c113e4ef11cb237095a09717f5c01
         '5f6e29ca023a0bdefa2476adb465d527' => __DIR__ . '/..' . '/laminas/laminas-stratigility/src/functions/middleware.php',
         '9cafd472178656835c3361ed18897082' => __DIR__ . '/..' . '/laminas/laminas-stratigility/src/functions/path.php',
         '253c157292f75eb38082b5acb06f3f01' => __DIR__ . '/..' . '/nikic/fast-route/src/functions.php',
-        'ad155f8f1cf0d418fe49e248db8c661b' => __DIR__ . '/..' . '/react/promise/src/functions_include.php',
         '04b6576f786ea6b5b4b577af08f8e4d1' => __DIR__ . '/..' . '/symfony/polyfill-intl-messageformatter/bootstrap.php',
-        '9d2b9fc6db0f153a0a149fefb182415e' => __DIR__ . '/..' . '/symfony/polyfill-php84/bootstrap.php',
         '84245cb95409c51c4ae97f8e59da883a' => __DIR__ . '/..' . '/flarum/core/src/helpers.php',
+        'ad155f8f1cf0d418fe49e248db8c661b' => __DIR__ . '/..' . '/react/promise/src/functions_include.php',
+        '9d2b9fc6db0f153a0a149fefb182415e' => __DIR__ . '/..' . '/symfony/polyfill-php84/bootstrap.php',
     );
 
     public static $prefixLengthsPsr4 = array (
@@ -189,7 +189,20 @@ class ComposerStaticInitc02c113e4ef11cb237095a09717f5c01
         'F' =>
         array (
             'Franzl\\Middleware\\Whoops\\' => 25,
+            'Flarum\\Tags\\' => 12,
+            'Flarum\\Suspend\\' => 15,
+            'Flarum\\Subscriptions\\' => 21,
+            'Flarum\\Sticky\\' => 14,
+            'Flarum\\Statistics\\' => 18,
+            'Flarum\\Pusher\\' => 14,
+            'Flarum\\Nicknames\\' => 17,
+            'Flarum\\Mentions\\' => 16,
+            'Flarum\\Lock\\' => 12,
+            'Flarum\\Likes\\' => 13,
+            'Flarum\\Flags\\' => 13,
             'Flarum\\ExtensionManager\\' => 24,
+            'Flarum\\BBCode\\' => 14,
+            'Flarum\\Approval\\' => 16,
             'Flarum\\' => 7,
             'Fig\\Http\\Message\\' => 17,
             'FastRoute\\' => 10,
@@ -621,9 +634,61 @@ class ComposerStaticInitc02c113e4ef11cb237095a09717f5c01
         array (
             0 => __DIR__ . '/..' . '/franzl/whoops-middleware/src',
         ),
+        'Flarum\\Tags\\' =>
+        array (
+            0 => __DIR__ . '/..' . '/flarum/tags/src',
+        ),
+        'Flarum\\Suspend\\' =>
+        array (
+            0 => __DIR__ . '/..' . '/flarum/suspend/src',
+        ),
+        'Flarum\\Subscriptions\\' =>
+        array (
+            0 => __DIR__ . '/..' . '/flarum/subscriptions/src',
+        ),
+        'Flarum\\Sticky\\' =>
+        array (
+            0 => __DIR__ . '/..' . '/flarum/sticky/src',
+        ),
+        'Flarum\\Statistics\\' =>
+        array (
+            0 => __DIR__ . '/..' . '/flarum/statistics/src',
+        ),
+        'Flarum\\Pusher\\' =>
+        array (
+            0 => __DIR__ . '/..' . '/flarum/pusher/src',
+        ),
+        'Flarum\\Nicknames\\' =>
+        array (
+            0 => __DIR__ . '/..' . '/flarum/nicknames/src',
+        ),
+        'Flarum\\Mentions\\' =>
+        array (
+            0 => __DIR__ . '/..' . '/flarum/mentions/src',
+        ),
+        'Flarum\\Lock\\' =>
+        array (
+            0 => __DIR__ . '/..' . '/flarum/lock/src',
+        ),
+        'Flarum\\Likes\\' =>
+        array (
+            0 => __DIR__ . '/..' . '/flarum/likes/src',
+        ),
+        'Flarum\\Flags\\' =>
+        array (
+            0 => __DIR__ . '/..' . '/flarum/flags/src',
+        ),
         'Flarum\\ExtensionManager\\' =>
         array (
             0 => __DIR__ . '/..' . '/flarum/extension-manager/src',
+        ),
+        'Flarum\\BBCode\\' =>
+        array (
+            0 => __DIR__ . '/..' . '/flarum/bbcode/src',
+        ),
+        'Flarum\\Approval\\' =>
+        array (
+            0 => __DIR__ . '/..' . '/flarum/approval/src',
         ),
         'Flarum\\' =>
         array (
@@ -813,6 +878,9 @@ class ComposerStaticInitc02c113e4ef11cb237095a09717f5c01
         'Nette\\Utils\\Validators' => __DIR__ . '/..' . '/nette/utils/src/Utils/Validators.php',
         'Normalizer' => __DIR__ . '/..' . '/symfony/polyfill-intl-normalizer/Resources/stubs/Normalizer.php',
         'PhpToken' => __DIR__ . '/..' . '/symfony/polyfill-php80/Resources/stubs/PhpToken.php',
+        'Pusher' => __DIR__ . '/..' . '/pusher/pusher-php-server/lib/Pusher.php',
+        'PusherException' => __DIR__ . '/..' . '/pusher/pusher-php-server/lib/Pusher.php',
+        'PusherInstance' => __DIR__ . '/..' . '/pusher/pusher-php-server/lib/Pusher.php',
         'ReflectionConstant' => __DIR__ . '/..' . '/symfony/polyfill-php84/Resources/stubs/ReflectionConstant.php',
         'ReturnTypeWillChange' => __DIR__ . '/..' . '/symfony/polyfill-php81/Resources/stubs/ReturnTypeWillChange.php',
         'Stringable' => __DIR__ . '/..' . '/marc-mabe/php-enum/stubs/Stringable.php',
@@ -824,10 +892,10 @@ class ComposerStaticInitc02c113e4ef11cb237095a09717f5c01
     public static function getInitializer(ClassLoader $loader)
     {
         return \Closure::bind(function () use ($loader) {
-            $loader->prefixLengthsPsr4 = ComposerStaticInitc02c113e4ef11cb237095a09717f5c01::$prefixLengthsPsr4;
-            $loader->prefixDirsPsr4 = ComposerStaticInitc02c113e4ef11cb237095a09717f5c01::$prefixDirsPsr4;
-            $loader->prefixesPsr0 = ComposerStaticInitc02c113e4ef11cb237095a09717f5c01::$prefixesPsr0;
-            $loader->classMap = ComposerStaticInitc02c113e4ef11cb237095a09717f5c01::$classMap;
+            $loader->prefixLengthsPsr4 = ComposerStaticInit26e117448b7e4aff234b5ed0dbd68e1d::$prefixLengthsPsr4;
+            $loader->prefixDirsPsr4 = ComposerStaticInit26e117448b7e4aff234b5ed0dbd68e1d::$prefixDirsPsr4;
+            $loader->prefixesPsr0 = ComposerStaticInit26e117448b7e4aff234b5ed0dbd68e1d::$prefixesPsr0;
+            $loader->classMap = ComposerStaticInit26e117448b7e4aff234b5ed0dbd68e1d::$classMap;
 
         }, null, ClassLoader::class);
     }
