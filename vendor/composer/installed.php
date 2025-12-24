@@ -3,11 +3,11 @@
         'name' => 'flarum/flarum',
         'pretty_version' => 'dev-main',
         'version' => 'dev-main',
-        'reference' => 'd62976b6566173216284e8d91b256f9d1b17fbd6',
+        'reference' => '791c0a6f3100103676b3e226403ecf577b2ab19b',
         'type' => 'project',
         'install_path' => __DIR__ . '/../../',
         'aliases' => array(),
-        'dev' => false,
+        'dev' => true,
     ),
     'versions' => array(
         'axy/backtrace' => array(
@@ -283,7 +283,7 @@
         'flarum/flarum' => array(
             'pretty_version' => 'dev-main',
             'version' => 'dev-main',
-            'reference' => 'd62976b6566173216284e8d91b256f9d1b17fbd6',
+            'reference' => '791c0a6f3100103676b3e226403ecf577b2ab19b',
             'type' => 'project',
             'install_path' => __DIR__ . '/../../',
             'aliases' => array(),
@@ -973,8 +973,8 @@
         'psr/log-implementation' => array(
             'dev_requirement' => false,
             'provided' => array(
-                0 => '1.0|2.0',
-                1 => '1.0.0',
+                0 => '1.0.0',
+                1 => '1.0|2.0',
             ),
         ),
         'psr/simple-cache' => array(

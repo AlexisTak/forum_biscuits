@@ -10911,6 +10911,6 @@
             "install-path": "../wikimedia/less.php"
         }
     ],
-    "dev": false,
+    "dev": true,
     "dev-package-names": []
 }
